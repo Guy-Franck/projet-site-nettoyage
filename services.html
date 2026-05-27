@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Services - Innov'Éclat CI | Solutions de Nettoyage Haut de Gamme</title>
+  <meta name="description" content="Découvrez nos 8 services de nettoyage, d'entretien, de désinsectisation, de transport et de gestion de déchets en Côte d'Ivoire. Demandez votre devis gratuit.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f4f5fc',
+              100: '#e8ebf9',
+              200: '#c5cdf0',
+              300: '#a3aee8',
+              400: '#5e72d7',
+              500: '#19207d',
+              600: '#161b59',
+              700: '#111545',
+            },
+            secondary: {
+              50: '#ecfdfd',
+              100: '#d0fcfc',
+              200: '#a8fafb',
+              300: '#6cf3f5',
+              400: '#35f0f5',
+              500: '#16dce2',
+              600: '#0fb2b7',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+
+  <!-- 0. Page Loader -->
+  <div id="page-loader" class="page-loader">
+    <div class="flex flex-col items-center">
+      <img src="assets/images/logo.png" alt="Logo" class="w-32 mb-6 animate-pulse">
+      <div class="loader-spinner"></div>
+    </div>
+  </div>
+
+  <!-- 1. Top Contact Info Bar -->
+  <div class="bg-primary-600 text-white text-xs py-2 px-4 border-b border-white/10 hidden md:block z-50 relative">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <span><i class="fa fa-phone text-secondary-400 mr-2"></i> +225 07 14 40 22 02 / 05 95 65 37 06</span>
+        <span><i class="fa fa-envelope text-secondary-400 mr-2"></i> infos@innoveclat.ci</span>
+        <span><i class="fa-solid fa-clock text-secondary-400 mr-2"></i> Lun - Ven : 8h30 - 18h / Sam : 9h - 18h</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/innov_eclat/" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/innov-%C3%A9clat-29b2a13a5/" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Header / Navigation -->
+  <header id="main-navbar" class="sticky top-0 w-full z-40 transition-all duration-300 border-b border-transparent sticky-navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex-shrink-0 flex items-center">
+          <img src="assets/images/logo.png" alt="Innov'Éclat Logo" class="h-14 w-auto dark:brightness-110">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="text-sm font-semibold hover:text-secondary-400 transition">Accueil</a>
+          <a href="about.html" class="text-sm font-semibold hover:text-secondary-400 transition">À propos</a>
+          <a href="services.html" class="text-sm font-semibold text-secondary-500 hover:text-secondary-400 transition">Services</a>
+          <a href="contact.html" class="text-sm font-semibold hover:text-secondary-400 transition">Contact</a>
+        </nav>
+
+        <!-- CTAs & DarkMode Toggle -->
+        <div class="hidden lg:flex items-center space-x-6">
+          <button class="theme-toggle p-2.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Toggle theme">
+            <i class="fa fa-moon text-slate-600 dark:text-slate-400 theme-toggle-dark text-lg"></i>
+            <i class="fa fa-sun text-amber-400 theme-toggle-light text-lg hidden"></i>
+          </button>
+          <a href="contact.html" class="bg-primary-500 hover:bg-primary-600 dark:bg-secondary-400 dark:hover:bg-secondary-500 text-white dark:text-slate-950 font-bold px-6 py-2.5 rounded-full transition shadow-lg shadow-primary-500/20 dark:shadow-secondary-400/10 text-sm">
+            Demander un devis
+          </a>
+        </div>
+
+        <!-- Mobile Menu Trigger & DarkMode -->
+        <div class="flex items-center space-x-4 lg:hidden">
+          <button class="theme-toggle p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Toggle theme">
+            <i class="fa fa-moon text-slate-600 dark:text-slate-400 theme-toggle-dark text-lg"></i>
+            <i class="fa fa-sun text-amber-400 theme-toggle-light text-lg hidden"></i>
+          </button>
+          <button id="menu-toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Open menu">
+            <i class="fa fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. Mobile Navigation Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex justify-end">
+    <div class="w-80 max-w-xs bg-white dark:bg-slate-900 h-full p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-center mb-10">
+          <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto">
+          <button id="menu-close" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition text-slate-500" aria-label="Close menu">
+            <i class="fa fa-times text-xl"></i>
+          </button>
+        </div>
+        <nav class="flex flex-col space-y-6">
+          <a href="index.html" class="mobile-menu-link text-lg font-bold hover:text-secondary-400 transition">Accueil</a>
+          <a href="about.html" class="mobile-menu-link text-lg font-bold hover:text-secondary-400 transition">À propos</a>
+          <a href="services.html" class="mobile-menu-link text-lg font-bold text-secondary-500">Services</a>
+          <a href="contact.html" class="mobile-menu-link text-lg font-bold hover:text-secondary-400 transition">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <a href="contact.html" class="block text-center bg-primary-500 hover:bg-primary-600 dark:bg-secondary-400 dark:hover:bg-secondary-500 text-white dark:text-slate-950 font-bold py-3 rounded-full transition shadow-lg w-full mb-6">
+          Demander un devis
+        </a>
+        <div class="text-center text-xs text-slate-500">
+          <p><i class="fa fa-phone mr-1"></i> +225 07 14 40 22 02</p>
+          <p class="mt-1"><i class="fa-solid fa-envelope mr-1"></i> infos@innoveclat.ci</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Page Header Banner -->
+  <section class="relative bg-primary-700 dark:bg-slate-900 py-20 overflow-hidden text-white transition-colors duration-300">
+    <div class="hero-glow top-0 left-0 scale-75"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold font-display">Nos Services Professionnels</h1>
+      <p class="mt-4 text-slate-200 max-w-2xl mx-auto text-sm md:text-base">
+        Découvrez nos prestations de nettoyage et d'entretien sur-mesure. Nous assurons la propreté de vos chantiers, bureaux, résidences, et l'assainissement de vos locaux.
+      </p>
+    </div>
+  </section>
+
+  <!-- 5. Services Detailed Grid Section -->
+  <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 gap-10 lg:gap-12">
+      
+      <!-- Service 1: Nettoyage de fin de chantier -->
+      <div id="nettoyage-chantier" class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300 reveal-left">
+        <div>
+          <div class="h-64 relative overflow-hidden">
+            <img src="assets/images/service1.jpg" alt="Nettoyage fin de chantier" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+            <div class="absolute top-6 left-6 w-14 h-14 bg-primary-500/90 text-white rounded-2xl flex items-center justify-center text-2xl shadow-lg border border-white/10">
+              <i class="fa fa-trowel-bricks"></i>
+            </div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-2xl font-bold font-display">Nettoyage de fin de chantier</h3>
+            </div>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+              Après la poussière et le désordre des travaux, redonnez vie à vos locaux. Nous intervenons rapidement pour évacuer les gravats, désincruster les résidus de peinture, de plâtre ou de colle, laver les sols et vitres pour une livraison propre et sécurisée.
+            </p>
+            <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
+            <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Grattage et retrait des résidus de colle, ciment, plâtre</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Dépoussiérage humide de toutes les surfaces</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Lavage complet des vitres, glissières et encadrements</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Nettoyage humide et traitement adapté des sols</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-8 pt-0">
+          <a href="contact.html?service=chantier" class="block text-center bg-primary-500 hover:bg-primary-600 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold py-3.5 rounded-2xl transition w-full shadow-lg text-sm">
+            Demander un devis chantier
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 2: Nettoyage de canapés, tapis et moquettes -->
+      <div id="nettoyage-textile" class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300 reveal-right">
+        <div>
+          <div class="h-64 relative overflow-hidden">
+            <img src="assets/images/service2.jpg" alt="Nettoyage de canapés, tapis" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+            <div class="absolute top-6 left-6 w-14 h-14 bg-primary-500/90 text-white rounded-2xl flex items-center justify-center text-2xl shadow-lg border border-white/10">
+              <i class="fa fa-couch"></i>
+            </div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-2xl font-bold font-display">Canapés, tapis &amp; moquettes</h3>
+            </div>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+              Les canapés et textiles accumulent la saleté, les acariens et les odeurs. Grâce à nos nettoyeurs par injection-extraction professionnels, nous redonnons leur éclat d'origine à vos ameublements et assurons une hygiène optimale.
+            </p>
+            <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
+            <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Extraction en profondeur de la poussière et des acariens</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Traitement ciblé des taches tenaces (café, graisse, sang)</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Nettoyage par injection-extraction humide</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Désodorisation et application d'un traitement antibactérien</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-8 pt-0">
+          <a href="contact.html?service=textiles" class="block text-center bg-primary-500 hover:bg-primary-600 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold py-3.5 rounded-2xl transition w-full shadow-lg text-sm">
+            Demander un devis canapés/tapis
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 3: Entretien ménager et industriel -->
+      <div id="entretien-locaux" class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300 reveal-left">
+        <div>
+          <div class="h-64 relative overflow-hidden">
+            <img src="assets/images/service3.jpg" alt="Entretien ménager et industriel" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+            <div class="absolute top-6 left-6 w-14 h-14 bg-primary-500/90 text-white rounded-2xl flex items-center justify-center text-2xl shadow-lg border border-white/10">
+              <i class="fa fa-building"></i>
+            </div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-2xl font-bold font-display">Entretien ménager &amp; industriel</h3>
+            </div>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+              Que ce soit pour un ménage régulier à domicile ou pour la maintenance hygiénique de surfaces de production industrielles, nous mettons en place des plannings sur-mesure pour vous garantir des environnements de travail et de vie confortables.
+            </p>
+            <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
+            <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Nettoyage quotidien ou hebdomadaire des bureaux et communs</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Dépoussiérage et désinfection des postes de travail et ordinateurs</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Lavage mécanique ou manuel des grandes surfaces de stockage</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Entretien et désinfection des sanitaires et cafétérias</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-8 pt-0">
+          <a href="contact.html?service=entretien" class="block text-center bg-primary-500 hover:bg-primary-600 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold py-3.5 rounded-2xl transition w-full shadow-lg text-sm">
+            Demander un devis entretien
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 4: Dératisation et désinsectisation -->
+      <div id="deratisation" class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300 reveal-right">
+        <div>
+          <div class="h-64 relative overflow-hidden">
+            <img src="assets/images/service4.jpg" alt="Dératisation et désinsectisation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+            <div class="absolute top-6 left-6 w-14 h-14 bg-primary-500/90 text-white rounded-2xl flex items-center justify-center text-2xl shadow-lg border border-white/10">
+              <i class="fa fa-bug-slash"></i>
+            </div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-2xl font-bold font-display">Dératisation &amp; désinsectisation</h3>
+            </div>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+              Les nuisibles nuisent à votre santé et à l'image de votre établissement. Nous proposons des solutions d'éradication et de prévention ciblées (contre rongeurs, cafards, moustiques, termites) pour garder vos locaux sains.
+            </p>
+            <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
+            <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Diagnostic initial de l'infestation et identification des nuisibles</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Traitement curatif (pulvérisation, gel appât, fumigation)</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Pose de boîtiers de piégeage sécurisés contre les rongeurs</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Rapport de suivi sanitaire et recommandations préventives</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-8 pt-0">
+          <a href="contact.html?service=deratisation" class="block text-center bg-primary-500 hover:bg-primary-600 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold py-3.5 rounded-2xl transition w-full shadow-lg text-sm">
+            Demander un devis nuisibles
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 5: Location & vente de matériel de nettoyage -->
+      <div id="location-materiel" class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300 reveal-left">
+        <div>
+          <div class="h-64 relative overflow-hidden">
+            <img src="assets/images/service5.jpg" alt="Location et vente matériel" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+            <div class="absolute top-6 left-6 w-14 h-14 bg-primary-500/90 text-white rounded-2xl flex items-center justify-center text-2xl shadow-lg border border-white/10">
+              <i class="fa fa-dolly"></i>
+            </div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-2xl font-bold font-display">Matériel de nettoyage</h3>
+            </div>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+              Nous vendons et louons des machines professionnelles de nettoyage à haute performance pour vos travaux ponctuels ou réguliers. Notre équipe assure également la mise en service et la démonstration.
+            </p>
+            <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
+            <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Location de monobrosses, aspirateurs eau et poussière</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Vente d'autolaveuses et de nettoyeurs haute pression</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Fourniture de produits de nettoyage professionnels écologiques</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Service après-vente et maintenance des équipements</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-8 pt-0">
+          <a href="contact.html?service=location" class="block text-center bg-primary-500 hover:bg-primary-600 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold py-3.5 rounded-2xl transition w-full shadow-lg text-sm">
+            Demander un devis matériel
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 6: Aménagement intérieur -->
+      <div id="amenagement" class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300 reveal-right">
+        <div>
+          <div class="h-64 relative overflow-hidden">
+            <img src="assets/images/service6.jpg" alt="Aménagement intérieur" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+            <div class="absolute top-6 left-6 w-14 h-14 bg-primary-500/90 text-white rounded-2xl flex items-center justify-center text-2xl shadow-lg border border-white/10">
+              <i class="fa fa-chair"></i>
+            </div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-2xl font-bold font-display">Aménagement intérieur</h3>
+            </div>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+              Au-delà de la propreté, nous vous aidons à agencer vos pièces pour créer des espaces modernes, accueillants et fonctionnels. Optimisez le confort de vos bureaux ou le style de votre domicile.
+            </p>
+            <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
+            <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Conseil en aménagement spatial et choix du mobilier</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Agencement de postes de travail collaboratifs (Coworking)</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Rénovation esthétique des sols et décoration légère</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Optimisation de l'éclairage et de l'acoustique des locaux</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-8 pt-0">
+          <a href="contact.html?service=amenagement" class="block text-center bg-primary-500 hover:bg-primary-600 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold py-3.5 rounded-2xl transition w-full shadow-lg text-sm">
+            Demander un devis aménagement
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 7: Transport et logistique -->
+      <div id="transport" class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300 reveal-left">
+        <div>
+          <div class="h-64 relative overflow-hidden">
+            <img src="assets/images/service7.jpg" alt="Transport et logistique" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+            <div class="absolute top-6 left-6 w-14 h-14 bg-primary-500/90 text-white rounded-2xl flex items-center justify-center text-2xl shadow-lg border border-white/10">
+              <i class="fa fa-truck-fast"></i>
+            </div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-2xl font-bold font-display">Transport &amp; logistique</h3>
+            </div>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+              Nous mettons à votre service notre logistique et nos véhicules de transport pour assurer le transport sécurisé de vos matériels ou l'appui à vos déménagements résidentiels et professionnels.
+            </p>
+            <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
+            <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Aide au déménagement complet de bureaux ou résidences</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Transport sécurisé de colis et matériels sensibles</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Planification logistique et emballage sécurisé</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Flotte de véhicules adaptés aux différents volumes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-8 pt-0">
+          <a href="contact.html?service=transport" class="block text-center bg-primary-500 hover:bg-primary-600 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold py-3.5 rounded-2xl transition w-full shadow-lg text-sm">
+            Demander un devis transport
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 8: Gestion des déchets -->
+      <div id="dechets" class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300 reveal-right">
+        <div>
+          <div class="h-64 relative overflow-hidden">
+            <img src="assets/images/service8.jpg" alt="Gestion des déchets" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+            <div class="absolute top-6 left-6 w-14 h-14 bg-primary-500/90 text-white rounded-2xl flex items-center justify-center text-2xl shadow-lg border border-white/10">
+              <i class="fa fa-dumpster"></i>
+            </div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-2xl font-bold font-display">Gestion des déchets</h3>
+            </div>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+              Assurez l'élimination réglementaire de vos déchets d'activité ou encombrants. Nous trions et évacuons vos rebuts vers les décharges autorisées, en favorisant les démarches écoresponsables.
+            </p>
+            <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
+            <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Évacuation des encombrants et rebuts de bureaux/chantiers</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Collecte sélective et tri des cartons, plastiques et papiers</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Nettoyage et désinfection des locaux à poubelles</li>
+              <li><i class="fa fa-check text-secondary-500 mr-2"></i> Destruction sécurisée de documents confidentiels avec certificat</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-8 pt-0">
+          <a href="contact.html?service=dechets" class="block text-center bg-primary-500 hover:bg-primary-600 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold py-3.5 rounded-2xl transition w-full shadow-lg text-sm">
+            Demander un devis déchets
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. Footer Section -->
+  <footer class="bg-slate-900 text-slate-400 pt-20 pb-8 border-t border-white/5 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <!-- Brand Info -->
+        <div>
+          <img src="assets/images/logo.png" alt="Logo Innov'Éclat" class="h-14 w-auto mb-6">
+          <p class="text-sm text-slate-400 leading-relaxed text-justify">
+            Société spécialisée dans le nettoyage professionnel, l'entretien industriel et résidentiel, la dératisation et désinsectisation en Côte d'Ivoire.
+          </p>
+          <div class="flex items-center space-x-4 mt-6">
+            <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/innov_eclat/" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/innov-%C3%A9clat-29b2a13a5/" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="text-white font-bold font-display text-lg mb-6">Liens Rapides</h4>
+          <ul class="space-y-4 text-sm">
+            <li><a href="index.html" class="hover:text-secondary-400 transition">Accueil</a></li>
+            <li><a href="about.html" class="hover:text-secondary-400 transition">À propos</a></li>
+            <li><a href="services.html" class="hover:text-secondary-400 transition">Nos services</a></li>
+            <li><a href="contact.html" class="hover:text-secondary-400 transition">Nous contacter</a></li>
+          </ul>
+        </div>
+
+        <!-- Headquarters -->
+        <div>
+          <h4 class="text-white font-bold font-display text-lg mb-6">Siège Social</h4>
+          <p class="text-sm leading-relaxed mb-4">
+            Abidjan Cocody Riviera Palmeraie, Lot 1536, Îlot 83, Côte d'Ivoire.
+          </p>
+          <p class="text-sm">
+            <strong class="text-white">Adresse postale :</strong> 31 BP 796 Abidjan 31
+          </p>
+        </div>
+
+        <!-- Fast Contact -->
+        <div>
+          <h4 class="text-white font-bold font-display text-lg mb-6">Contact direct</h4>
+          <ul class="space-y-4 text-sm">
+            <li class="flex items-start">
+              <i class="fa fa-phone text-secondary-400 mt-1 mr-3 flex-shrink-0"></i>
+              <span>+225 07 14 40 22 02<br>+225 05 95 65 37 06</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa fa-envelope text-secondary-400 mr-3 flex-shrink-0"></i>
+              <a href="mailto:infos@innoveclat.ci" class="hover:text-secondary-400 transition">infos@innoveclat.ci</a>
+            </li>
+            <li class="flex items-start">
+              <i class="fa-solid fa-clock text-secondary-400 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Lun - Ven : 8h30 - 18h<br>Samedi : 9h00 - 18h00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/5 pt-8 text-center text-xs flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <p>&copy; 2026 Innov'Éclat CI. Tous droits réservés. Création de site premium.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-secondary-400 transition">Politique de confidentialité</a>
+          <a href="#" class="hover:text-secondary-400 transition">Mentions légales</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 7. Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 p-4 rounded-full bg-primary-500 dark:bg-secondary-400 text-white dark:text-slate-950 shadow-2xl hover:scale-110 transition duration-300 opacity-0 invisible translate-y-4 z-30" aria-label="Back to top">
+    <i class="fa fa-arrow-up text-lg"></i>
+  </button>
+
+  <!-- Custom JS Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

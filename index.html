@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innov'Éclat CI - Services de Nettoyage Premium en Côte d'Ivoire</title>
+  <meta name="description" content="Société spécialisée dans le nettoyage, l'entretien, la dératisation et la désinsectisation en Côte d'Ivoire. Service haut de gamme pour particuliers et professionnels.">
+  <meta name="keywords" content="nettoyage, entretien, désinsectisation, dératisation, fin de chantier, Côte d'Ivoire, Abidjan, Innov'Éclat">
+  <meta name="author" content="Innov'Éclat CI">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Innov'Éclat CI - Services de Nettoyage Premium">
+  <meta property="og:description" content="Découvrez nos solutions professionnelles de nettoyage et d'entretien en Côte d'Ivoire.">
+  <meta property="og:image" content="assets/images/logo.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f4f5fc',
+              100: '#e8ebf9',
+              200: '#c5cdf0',
+              300: '#a3aee8',
+              400: '#5e72d7',
+              500: '#19207d',
+              600: '#161b59',
+              700: '#111545',
+            },
+            secondary: {
+              50: '#ecfdfd',
+              100: '#d0fcfc',
+              200: '#a8fafb',
+              300: '#6cf3f5',
+              400: '#35f0f5',
+              500: '#16dce2',
+              600: '#0fb2b7',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+
+  <!-- 0. Page Loader -->
+  <div id="page-loader" class="page-loader">
+    <div class="flex flex-col items-center">
+      <img src="assets/images/logo.png" alt="Logo Innov'Éclat CI" class="w-32 mb-6 animate-pulse">
+      <div class="loader-spinner"></div>
+    </div>
+  </div>
+
+  <!-- 1. Top Contact Info Bar -->
+  <div class="bg-primary-600 text-white text-xs py-2 px-4 border-b border-white/10 hidden md:block z-50 relative">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <span><i class="fa fa-phone text-secondary-400 mr-2"></i> +225 07 14 40 22 02 / 05 95 65 37 06</span>
+        <span><i class="fa fa-envelope text-secondary-400 mr-2"></i> infos@innoveclat.ci</span>
+        <span><i class="fa-solid fa-clock text-secondary-400 mr-2"></i> Lun - Ven : 8h30 - 18h / Sam : 9h - 18h</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/innov_eclat/" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/innov-%C3%A9clat-29b2a13a5/" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Header / Navigation -->
+  <header id="main-navbar" class="sticky top-0 w-full z-40 transition-all duration-300 border-b border-transparent sticky-navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex-shrink-0 flex items-center">
+          <img src="assets/images/logo.png" alt="Innov'Éclat Logo" class="h-14 w-auto dark:brightness-110">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="text-sm font-semibold text-secondary-500 hover:text-secondary-400 transition">Accueil</a>
+          <a href="about.html" class="text-sm font-semibold hover:text-secondary-400 transition">À propos</a>
+          <a href="services.html" class="text-sm font-semibold hover:text-secondary-400 transition">Services</a>
+          <a href="contact.html" class="text-sm font-semibold hover:text-secondary-400 transition">Contact</a>
+        </nav>
+
+        <!-- CTAs & DarkMode Toggle -->
+        <div class="hidden lg:flex items-center space-x-6">
+          <button class="theme-toggle p-2.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Toggle theme">
+            <i class="fa fa-moon text-slate-600 dark:text-slate-400 theme-toggle-dark text-lg"></i>
+            <i class="fa fa-sun text-amber-400 theme-toggle-light text-lg hidden"></i>
+          </button>
+          <a href="contact.html" class="bg-primary-500 hover:bg-primary-600 dark:bg-secondary-400 dark:hover:bg-secondary-500 text-white dark:text-slate-950 font-bold px-6 py-2.5 rounded-full transition shadow-lg shadow-primary-500/20 dark:shadow-secondary-400/10 text-sm">
+            Demander un devis
+          </a>
+        </div>
+
+        <!-- Mobile Menu Trigger & DarkMode -->
+        <div class="flex items-center space-x-4 lg:hidden">
+          <button class="theme-toggle p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Toggle theme">
+            <i class="fa fa-moon text-slate-600 dark:text-slate-400 theme-toggle-dark text-lg"></i>
+            <i class="fa fa-sun text-amber-400 theme-toggle-light text-lg hidden"></i>
+          </button>
+          <button id="menu-toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Open menu">
+            <i class="fa fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. Mobile Navigation Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex justify-end">
+    <div class="w-80 max-w-xs bg-white dark:bg-slate-900 h-full p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-center mb-10">
+          <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto">
+          <button id="menu-close" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition text-slate-500" aria-label="Close menu">
+            <i class="fa fa-times text-xl"></i>
+          </button>
+        </div>
+        <nav class="flex flex-col space-y-6">
+          <a href="index.html" class="mobile-menu-link text-lg font-bold text-secondary-500">Accueil</a>
+          <a href="about.html" class="mobile-menu-link text-lg font-bold hover:text-secondary-400 transition">À propos</a>
+          <a href="services.html" class="mobile-menu-link text-lg font-bold hover:text-secondary-400 transition">Services</a>
+          <a href="contact.html" class="mobile-menu-link text-lg font-bold hover:text-secondary-400 transition">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <a href="contact.html" class="block text-center bg-primary-500 hover:bg-primary-600 dark:bg-secondary-400 dark:hover:bg-secondary-500 text-white dark:text-slate-950 font-bold py-3 rounded-full transition shadow-lg w-full mb-6">
+          Demander un devis
+        </a>
+        <div class="text-center text-xs text-slate-500">
+          <p><i class="fa fa-phone mr-1"></i> +225 07 14 40 22 02</p>
+          <p class="mt-1"><i class="fa-solid fa-envelope mr-1"></i> infos@innoveclat.ci</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Hero Section with Glow & Slider Background -->
+  <section class="relative min-h-screen flex items-center overflow-hidden pt-20">
+    <!-- Glow effects -->
+    <div class="hero-glow top-10 left-10"></div>
+    <div class="hero-glow bottom-10 right-10"></div>
+
+    <!-- Background Slider Elements -->
+    <div class="absolute inset-0 z-0">
+      <div id="hero-slider" class="relative w-full h-full">
+        <!-- Slide 1 -->
+        <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100">
+          <img src="assets/images/hero1.jpg" alt="Propreté" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-primary-700/80 via-primary-600/50 to-transparent dark:from-slate-950/90 dark:via-slate-950/60 dark:to-transparent"></div>
+        </div>
+        <!-- Slide 2 (extérieur villa/piscine) -->
+        <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0">
+          <img src="assets/images/hero2.jpg" alt="Nettoyage extérieur villa et piscine" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-primary-700/80 via-primary-600/50 to-transparent dark:from-slate-950/90 dark:via-slate-950/60 dark:to-transparent"></div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0">
+          <img src="assets/images/hero3.jpg" alt="Nettoyage Canapé" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-primary-700/80 via-primary-600/50 to-transparent dark:from-slate-950/90 dark:via-slate-950/60 dark:to-transparent"></div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0">
+          <img src="assets/images/hero4.jpg" alt="Désinsectisation" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-primary-700/80 via-primary-600/50 to-transparent dark:from-slate-950/90 dark:via-slate-950/60 dark:to-transparent"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-24 md:py-32">
+      <div class="max-w-3xl">
+        <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-secondary-400/20 text-secondary-400 border border-secondary-400/30 mb-6 uppercase tracking-wider animate-bounce">
+          <i class="fa fa-sparkles mr-2"></i>Leader du nettoyage en Côte d'Ivoire
+        </span>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight font-display drop-shadow-md">
+          Un cadre propre, <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary-400 to-cyan-300">sain &amp; agréable</span> pour tous
+        </h1>
+        <p class="mt-6 text-lg text-slate-100 dark:text-slate-300 max-w-2xl leading-relaxed drop-shadow-sm">
+          Innov'Éclat CI vous accompagne dans la gestion de vos espaces résidentiels et professionnels. Profitez d'une expertise reconnue et d'équipements de pointe pour un confort total.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-5">
+          <a href="services.html" class="bg-secondary-400 hover:bg-secondary-500 text-slate-950 font-bold px-8 py-4 rounded-full text-center transition shadow-lg shadow-secondary-400/20">
+            Découvrir nos services
+          </a>
+          <a href="contact.html" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold px-8 py-4 rounded-full text-center transition backdrop-blur-sm">
+            Contactez-nous
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS script for Hero Crossfade -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slides = document.querySelectorAll('.hero-slide');
+      if (slides.length > 1) {
+        let current = 0;
+        setInterval(() => {
+          slides[current].classList.remove('opacity-100');
+          slides[current].classList.add('opacity-0');
+          current = (current + 1) % slides.length;
+          slides[current].classList.remove('opacity-0');
+          slides[current].classList.add('opacity-100');
+        }, 5000);
+      }
+    });
+  </script>
+
+  <!-- 5. Key Statistics Section -->
+  <section class="relative z-20 -mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800 p-8 md:p-12 glassmorphism">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 divide-y-0 divide-x-0 divide-slate-100 dark:divide-slate-800">
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-extrabold text-primary-500 dark:text-secondary-400 font-display flex justify-center items-center">
+            <span class="stats-counter" data-target="98">0</span>%
+          </div>
+          <p class="mt-2 text-xs md:text-sm text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Clients satisfaits</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-extrabold text-primary-500 dark:text-secondary-400 font-display flex justify-center items-center">
+            <span class="stats-counter" data-target="1500">0</span>+
+          </div>
+          <p class="mt-2 text-xs md:text-sm text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Chantiers nettoyés</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-extrabold text-primary-500 dark:text-secondary-400 font-display flex justify-center items-center">
+            <span class="stats-counter" data-target="50">0</span>+
+          </div>
+          <p class="mt-2 text-xs md:text-sm text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Collaborateurs formés</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-extrabold text-primary-500 dark:text-secondary-400 font-display flex justify-center items-center">
+            <span class="stats-counter" data-target="7">0</span>j/7
+          </div>
+          <p class="mt-2 text-xs md:text-sm text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Interventions rapides</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. About Quick Presentation Section -->
+  <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <!-- Image Grid asymmetric -->
+      <div class="relative reveal-left">
+        <div class="absolute inset-0 bg-gradient-to-tr from-primary-500 to-secondary-400 rounded-3xl transform rotate-2 scale-95 opacity-20 filter blur-xl"></div>
+        <img src="assets/images/about.jpg" alt="Équipe de nettoyage Innov'Éclat" class="rounded-3xl shadow-2xl relative z-10 w-full object-cover h-[450px]">
+        <div class="absolute -bottom-6 -right-6 bg-slate-900 text-white p-6 rounded-2xl shadow-xl z-20 max-w-xs border border-white/10 hidden sm:block">
+          <p class="text-sm font-semibold italic">"Votre confort et votre satisfaction sont notre priorité absolue."</p>
+          <span class="block mt-3 text-xs font-bold text-secondary-400 uppercase tracking-wider">— Direction Générale</span>
+        </div>
+      </div>
+
+      <!-- Description Content -->
+      <div class="reveal">
+        <span class="text-sm font-bold text-primary-500 dark:text-secondary-400 uppercase tracking-widest">Qui sommes-nous ?</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-primary-600 dark:text-white mt-3 font-display">
+          INNOV-ÉCLAT : Votre confort, notre engagement quotidien
+        </h2>
+        <p class="mt-6 text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+          Basée en Côte d'Ivoire, **INNOV-ÉCLAT** accompagne les particuliers, entreprises et institutions dans la gestion, l'entretien et la désinfection de leurs espaces de vie et de travail.
+        </p>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+          Notre équipe réactive met à votre disposition un savoir-faire éprouvé et des technologies modernes pour garantir des espaces impeccables et agréables à vivre, selon un excellent rapport qualité/prix.
+        </p>
+
+        <!-- Mini benefits list -->
+        <div class="grid sm:grid-cols-2 gap-4 mt-8">
+          <div class="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-400/20 text-secondary-500 dark:text-secondary-400 flex items-center justify-center"><i class="fa fa-check"></i></span>
+            <span class="font-semibold text-sm">Équipements de pointe</span>
+          </div>
+          <div class="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-400/20 text-secondary-500 dark:text-secondary-400 flex items-center justify-center"><i class="fa fa-check"></i></span>
+            <span class="font-semibold text-sm">Équipe certifiée &amp; formée</span>
+          </div>
+          <div class="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-400/20 text-secondary-500 dark:text-secondary-400 flex items-center justify-center"><i class="fa fa-check"></i></span>
+            <span class="font-semibold text-sm">Contrats flexibles 7j/7</span>
+          </div>
+          <div class="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-400/20 text-secondary-500 dark:text-secondary-400 flex items-center justify-center"><i class="fa fa-check"></i></span>
+            <span class="font-semibold text-sm">Rapport qualité/prix</span>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <a href="about.html" class="inline-flex items-center text-primary-500 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-secondary-300 font-bold transition">
+            En savoir plus sur notre histoire <i class="fa fa-arrow-right ml-2 text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Core Services Showcase Section -->
+  <section class="py-24 bg-slate-100 dark:bg-slate-900 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="text-sm font-bold text-primary-500 dark:text-secondary-400 uppercase tracking-widest">Nos compétences</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-primary-600 dark:text-white mt-3 font-display">Nos Services Principaux</h2>
+        <p class="mt-4 text-slate-500 dark:text-slate-400">
+          Une large gamme de prestations sur-mesure pour redonner à vos espaces tout leur éclat.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service Card 1 -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group flex flex-col justify-between reveal">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="assets/images/service1.jpg" alt="Nettoyage fin de chantier" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute top-4 left-4 bg-primary-500/90 text-white p-3 rounded-xl flex items-center justify-center w-12 h-12 shadow-lg"><i class="fa fa-trowel-bricks text-xl"></i></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold font-display text-primary-600 dark:text-white group-hover:text-secondary-500 transition">Nettoyage fin de chantier</h3>
+              <p class="mt-3 text-slate-500 dark:text-slate-400 text-sm leading-relaxed text-justify">
+                Élimination des résidus de colle, plâtre, peinture, sciure et poussières après travaux pour une livraison clé en main impeccable.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="services.html#nettoyage-chantier" class="text-primary-500 dark:text-secondary-400 hover:text-primary-600 text-xs font-bold uppercase tracking-wider flex items-center">
+              Détails <i class="fa fa-chevron-right ml-2 text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group flex flex-col justify-between reveal delay-100">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="assets/images/service2.jpg" alt="Nettoyage canapé" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute top-4 left-4 bg-primary-500/90 text-white p-3 rounded-xl flex items-center justify-center w-12 h-12 shadow-lg"><i class="fa fa-couch text-xl"></i></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold font-display text-primary-600 dark:text-white group-hover:text-secondary-500 transition">Canapés, tapis &amp; moquettes</h3>
+              <p class="mt-3 text-slate-500 dark:text-slate-400 text-sm leading-relaxed text-justify">
+                Lavage par injection-extraction de vos textiles de salon et de bureau pour éliminer taches, allergènes et mauvaises odeurs en profondeur.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="services.html#nettoyage-textile" class="text-primary-500 dark:text-secondary-400 hover:text-primary-600 text-xs font-bold uppercase tracking-wider flex items-center">
+              Détails <i class="fa fa-chevron-right ml-2 text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group flex flex-col justify-between reveal delay-200">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="assets/images/service3.jpg" alt="Entretien bureau" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute top-4 left-4 bg-primary-500/90 text-white p-3 rounded-xl flex items-center justify-center w-12 h-12 shadow-lg"><i class="fa fa-building text-xl"></i></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold font-display text-primary-600 dark:text-white group-hover:text-secondary-500 transition">Entretien ménager &amp; industriel</h3>
+              <p class="mt-3 text-slate-500 dark:text-slate-400 text-sm leading-relaxed text-justify">
+                Entretien quotidien ou périodique de vos locaux commerciaux, bureaux, entrepôts ou habitations pour un cadre sain permanent.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="services.html#entretien-locaux" class="text-primary-500 dark:text-secondary-400 hover:text-primary-600 text-xs font-bold uppercase tracking-wider flex items-center">
+              Détails <i class="fa fa-chevron-right ml-2 text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="services.html" class="inline-flex items-center bg-primary-500 hover:bg-primary-600 dark:bg-secondary-400 dark:hover:bg-secondary-500 text-white dark:text-slate-950 font-bold px-8 py-3.5 rounded-full transition shadow-lg">
+          Voir tous nos services <i class="fa fa-grid-2 mr-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Interactive Before/After Gallery Section -->
+  <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <!-- Title text -->
+      <div class="lg:col-span-5 reveal-left">
+        <span class="text-sm font-bold text-primary-500 dark:text-secondary-400 uppercase tracking-widest">Preuve de notre savoir-faire</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-primary-600 dark:text-white mt-3 font-display">
+          Un résultat spectaculaire en un glissement
+        </h2>
+        <p class="mt-6 text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+          Parce que les mots ne remplacent pas les preuves visuelles, comparez vous-même. 
+        </p>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+          Faites glisser le curseur central sur l'image pour voir comment nos équipes transforment des chantiers poussiéreux ou des canapés encrassés en espaces étincelants et sains.
+        </p>
+        
+        <div class="mt-8 flex space-x-6">
+          <div class="flex items-center space-x-2 text-slate-500">
+            <span class="w-3 h-3 rounded-full bg-red-400 animate-ping"></span>
+            <span class="text-xs uppercase font-bold tracking-wider">Avant : Poussiéreux</span>
+          </div>
+          <div class="flex items-center space-x-2 text-slate-500">
+            <span class="w-3 h-3 rounded-full bg-secondary-400"></span>
+            <span class="text-xs uppercase font-bold tracking-wider">Après : Éclatant</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Before/After Slider Interface -->
+      <div class="lg:col-span-7 reveal-right">
+        <div class="before-after-container aspect-video md:aspect-[16/10]">
+          <!-- Before image (underneath) -->
+          <img src="assets/images/sofa_before.jpg" alt="Canapé Sale" class="before-after-image select-none pointer-events-none">
+          <div class="absolute bottom-4 right-4 bg-red-500/90 text-white font-bold text-xs uppercase tracking-wider px-3 py-1.5 rounded-lg z-10 select-none">
+            Avant nettoyage
+          </div>
+
+          <!-- After image (clipped container) -->
+          <div class="after-image-container w-1/2">
+            <img src="assets/images/sofa_after.jpg" alt="Canapé Propre" class="before-after-image absolute top-0 left-0 h-full max-w-none select-none pointer-events-none" style="width: 100vw;">
+            <div class="absolute bottom-4 left-4 bg-secondary-400/90 text-slate-950 font-bold text-xs uppercase tracking-wider px-3 py-1.5 rounded-lg z-10 select-none">
+              Après nettoyage
+            </div>
+          </div>
+
+          <!-- Handle -->
+          <div class="slider-handle">
+            <div class="slider-button">
+              <i class="fa fa-arrows-left-right text-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Why Choose Us (Assets & Values) -->
+  <section class="py-24 bg-primary-700 dark:bg-slate-900 text-white transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="text-sm font-bold text-secondary-400 uppercase tracking-widest">Nos atouts</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 font-display">Pourquoi choisir Innov'Éclat CI ?</h2>
+        <p class="mt-4 text-slate-300">
+          Nous mettons notre sérieux et nos équipements modernes au service de votre exigence.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Asset Card 1 -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:-translate-y-2 transition duration-300 hover:bg-white/10 group reveal">
+          <div class="w-14 h-14 bg-secondary-400/10 text-secondary-400 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition duration-300">
+            <i class="fa fa-bolt"></i>
+          </div>
+          <h3 class="text-xl font-bold mt-6 font-display group-hover:text-secondary-400 transition">Réactivité maximale</h3>
+          <p class="mt-4 text-slate-300 text-sm leading-relaxed text-justify">
+            Interventions rapides et efficaces sur toute la zone d'Abidjan et ses environs directs, 7 jours sur 7.
+          </p>
+        </div>
+
+        <!-- Asset Card 2 -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:-translate-y-2 transition duration-300 hover:bg-white/10 group reveal delay-100">
+          <div class="w-14 h-14 bg-secondary-400/10 text-secondary-400 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition duration-300">
+            <i class="fa fa-clipboard-check"></i>
+          </div>
+          <h3 class="text-xl font-bold mt-6 font-display group-hover:text-secondary-400 transition">Contrats flexibles</h3>
+          <p class="mt-4 text-slate-300 text-sm leading-relaxed text-justify">
+            Des formules et des contrats souples, taillés précisément selon les contraintes de votre activité B2B ou ménage résidentiel.
+          </p>
+        </div>
+
+        <!-- Asset Card 3 -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:-translate-y-2 transition duration-300 hover:bg-white/10 group reveal delay-200">
+          <div class="w-14 h-14 bg-secondary-400/10 text-secondary-400 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition duration-300">
+            <i class="fa fa-user-shield"></i>
+          </div>
+          <h3 class="text-xl font-bold mt-6 font-display group-hover:text-secondary-400 transition">Équipe formée</h3>
+          <p class="mt-4 text-slate-300 text-sm leading-relaxed text-justify">
+            Nos agents de propreté sont formés de manière continue aux bonnes pratiques environnementales et de sécurité.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Testimonials Carousel Section -->
+  <section class="py-24 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center testimonial-carousel-container">
+      <div class="mb-12 reveal">
+        <span class="text-sm font-bold text-primary-500 dark:text-secondary-400 uppercase tracking-widest">Témoignages</span>
+        <h2 class="text-3xl font-extrabold text-primary-600 dark:text-white mt-3 font-display">Ce que disent nos clients</h2>
+      </div>
+
+      <!-- Carousel wrapper -->
+      <div class="relative min-h-[250px] flex items-center justify-center reveal">
+        <!-- Slide 1 -->
+        <div class="testimonial-slide w-full transition-all duration-500 ease-in-out">
+          <div class="text-5xl text-secondary-400 mb-6 flex justify-center"><i class="fa fa-quote-left"></i></div>
+          <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 italic max-w-2xl mx-auto leading-relaxed">
+            "Après les travaux de rénovation de notre villa à Assinie, le chantier était impraticable. L'équipe d'Innov'Éclat CI a fait un travail extraordinaire en une journée. C'est propre, sain et livré clé en main !"
+          </p>
+          <div class="mt-8">
+            <h4 class="font-bold text-primary-600 dark:text-white font-display">M. Jean-Philippe Yao Koffi</h4>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Propriétaire, Assinie</span>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="testimonial-slide w-full transition-all duration-500 ease-in-out hidden opacity-0">
+          <div class="text-5xl text-secondary-400 mb-6 flex justify-center"><i class="fa fa-quote-left"></i></div>
+          <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 italic max-w-2xl mx-auto leading-relaxed">
+            "Nous confions l'entretien régulier de nos bureaux du Plateau à Innov'Éclat. Le personnel est d'une politesse remarquable et d'une rigueur absolue. Le suivi relationnel est excellent."
+          </p>
+          <div class="mt-8">
+            <h4 class="font-bold text-primary-600 dark:text-white font-display">M. Bakary Coulibaly</h4>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Chef d'entreprise, Le Plateau, Abidjan</span>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="testimonial-slide w-full transition-all duration-500 ease-in-out hidden opacity-0">
+          <div class="text-5xl text-secondary-400 mb-6 flex justify-center"><i class="fa fa-quote-left"></i></div>
+          <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 italic max-w-2xl mx-auto leading-relaxed">
+            "Notre grand canapé d'angle en velours à la Riviera Palmeraie était très taché. Après le passage d'Innov'Éclat pour un nettoyage par injection-extraction, il est redevenu comme neuf, sans aucune odeur !"
+          </p>
+          <div class="mt-8">
+            <h4 class="font-bold text-primary-600 dark:text-white font-display">Mme Awa Diomandé</h4>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Résidente, Riviera Palmeraie</span>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="testimonial-slide w-full transition-all duration-500 ease-in-out hidden opacity-0">
+          <div class="text-5xl text-secondary-400 mb-6 flex justify-center"><i class="fa fa-quote-left"></i></div>
+          <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 italic max-w-2xl mx-auto leading-relaxed">
+            "Nous avons sollicité Innov'Éclat pour la dératisation et désinsectisation complète de nos entrepôts de cacao à San Pédro. Très réactifs, professionnels et rapport de conformité impeccable."
+          </p>
+          <div class="mt-8">
+            <h4 class="font-bold text-primary-600 dark:text-white font-display">M. Stéphane Gnahoré</h4>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Directeur Logistique, San Pédro</span>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="testimonial-slide w-full transition-all duration-500 ease-in-out hidden opacity-0">
+          <div class="text-5xl text-secondary-400 mb-6 flex justify-center"><i class="fa fa-quote-left"></i></div>
+          <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 italic max-w-2xl mx-auto leading-relaxed">
+            "Le nettoyage en profondeur de nos salles de classe avant la rentrée scolaire à Yamoussoukro a été exécuté à la perfection. Parents d'élèves et personnel enseignant sont ravis !"
+          </p>
+          <div class="mt-8">
+            <h4 class="font-bold text-primary-600 dark:text-white font-display">Mme Marie-Claire Akissi Kouassi</h4>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Directrice d'école, Yamoussoukro</span>
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="testimonial-slide w-full transition-all duration-500 ease-in-out hidden opacity-0">
+          <div class="text-5xl text-secondary-400 mb-6 flex justify-center"><i class="fa fa-quote-left"></i></div>
+          <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 italic max-w-2xl mx-auto leading-relaxed">
+            "Lavage et désinfection de nos vitrines et moquettes pour notre boutique de Marcory Zone 4. L'éclat est immédiat et les clients adorent l'odeur de fraîcheur !"
+          </p>
+          <div class="mt-8">
+            <h4 class="font-bold text-primary-600 dark:text-white font-display">Mme Salimata Sylla</h4>
+            <span class="text-xs text-slate-400 uppercase font-semibold">Gérante de boutique, Marcory Zone 4</span>
+          </div>
+        </div>
+
+        <!-- Arrows Navigation -->
+        <button id="testimonial-prev" class="absolute left-0 p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-500 transition hidden md:block" aria-label="Previous testimonial">
+          <i class="fa fa-chevron-left text-xl"></i>
+        </button>
+        <button id="testimonial-next" class="absolute right-0 p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-500 transition hidden md:block" aria-label="Next testimonial">
+          <i class="fa fa-chevron-right text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Dots Indicators -->
+      <div id="testimonial-dots" class="flex justify-center space-x-2 mt-8"></div>
+    </div>
+  </section>
+
+  <!-- 11. Call To Action (Contact) -->
+  <section class="py-20 bg-gradient-to-r from-primary-600 to-primary-700 dark:from-slate-900 dark:to-slate-800 text-white text-center relative overflow-hidden transition-colors duration-300">
+    <div class="hero-glow top-0 right-0 scale-75"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 reveal">
+      <h2 class="text-3xl md:text-4xl font-extrabold font-display leading-tight">
+        Prêt à redonner de l'éclat à vos locaux ?
+      </h2>
+      <p class="mt-4 text-slate-200 max-w-2xl mx-auto">
+        Contactez nos experts dès aujourd'hui pour obtenir une estimation personnalisée gratuite et rapide.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <a href="contact.html" class="bg-secondary-400 hover:bg-secondary-500 text-slate-950 font-bold px-8 py-4 rounded-full transition shadow-lg w-full sm:w-auto">
+          Demander un devis gratuit
+        </a>
+        <a href="tel:+2250714402202" class="bg-white/10 hover:bg-white/20 border border-white/20 font-bold px-8 py-4 rounded-full transition backdrop-blur-sm w-full sm:w-auto">
+          <i class="fa fa-phone mr-2 text-secondary-400"></i> +225 07 14 40 22 02
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Footer Section -->
+  <footer class="bg-slate-900 text-slate-400 pt-20 pb-8 border-t border-white/5 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <!-- Brand Info -->
+        <div>
+          <img src="assets/images/logo.png" alt="Logo Innov'Éclat" class="h-14 w-auto mb-6">
+          <p class="text-sm text-slate-400 leading-relaxed text-justify">
+            Société spécialisée dans le nettoyage professionnel, l'entretien industriel et résidentiel, la dératisation et désinsectisation en Côte d'Ivoire.
+          </p>
+          <div class="flex items-center space-x-4 mt-6">
+            <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/innov_eclat/" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/innov-%C3%A9clat-29b2a13a5/" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="text-white font-bold font-display text-lg mb-6">Liens Rapides</h4>
+          <ul class="space-y-4 text-sm">
+            <li><a href="index.html" class="hover:text-secondary-400 transition">Accueil</a></li>
+            <li><a href="about.html" class="hover:text-secondary-400 transition">À propos</a></li>
+            <li><a href="services.html" class="hover:text-secondary-400 transition">Nos services</a></li>
+            <li><a href="contact.html" class="hover:text-secondary-400 transition">Nous contacter</a></li>
+          </ul>
+        </div>
+
+        <!-- Headquarters -->
+        <div>
+          <h4 class="text-white font-bold font-display text-lg mb-6">Siège Social</h4>
+          <p class="text-sm leading-relaxed mb-4">
+            Abidjan Cocody Riviera Palmeraie, Lot 1536, Îlot 83, Côte d'Ivoire.
+          </p>
+          <p class="text-sm">
+            <strong class="text-white">Adresse postale :</strong> 31 BP 796 Abidjan 31
+          </p>
+        </div>
+
+        <!-- Fast Contact -->
+        <div>
+          <h4 class="text-white font-bold font-display text-lg mb-6">Contact direct</h4>
+          <ul class="space-y-4 text-sm">
+            <li class="flex items-start">
+              <i class="fa fa-phone text-secondary-400 mt-1 mr-3 flex-shrink-0"></i>
+              <span>+225 07 14 40 22 02<br>+225 05 95 65 37 06</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa fa-envelope text-secondary-400 mr-3 flex-shrink-0"></i>
+              <a href="mailto:infos@innoveclat.ci" class="hover:text-secondary-400 transition">infos@innoveclat.ci</a>
+            </li>
+            <li class="flex items-start">
+              <i class="fa-solid fa-clock text-secondary-400 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Lun - Ven : 8h30 - 18h<br>Samedi : 9h00 - 18h00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/5 pt-8 text-center text-xs flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <p>&copy; 2026 Innov'Éclat CI. Tous droits réservés. Création de site premium.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-secondary-400 transition">Politique de confidentialité</a>
+          <a href="#" class="hover:text-secondary-400 transition">Mentions légales</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 13. Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 p-4 rounded-full bg-primary-500 dark:bg-secondary-400 text-white dark:text-slate-950 shadow-2xl hover:scale-110 transition duration-300 opacity-0 invisible translate-y-4 z-30" aria-label="Back to top">
+    <i class="fa fa-arrow-up text-lg"></i>
+  </button>
+
+  <!-- Custom JS Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
