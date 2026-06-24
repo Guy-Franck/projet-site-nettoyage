@@ -1,20 +1,46 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À propos - Innov'Éclat CI | Leader du Nettoyage et de l'Entretien</title>
-  <meta name="description" content="Découvrez l'histoire, la mission, la vision et les valeurs fondamentales d'Innov'Éclat CI, expert en propreté résidentielle et industrielle en Côte d'Ivoire.">
-  
+  <title>À propos - Innov-Éclat CI | Leader du Nettoyage et de l'Entretien</title>
+  <meta name="description" content="Découvrez l'histoire, la mission, la vision et les valeurs fondamentales d'Innov-Éclat CI, expert en propreté résidentielle et industrielle en Côte d'Ivoire.">
+  <meta name="keywords" content="nettoyage, entretien, désinsectisation, dératisation, fin de chantier, Côte d'Ivoire, Abidjan, Innov-Éclat">
+  <meta name="author" content="Innov-Éclat CI">
+  <link rel="canonical" href="https://www.innoveclat.ci/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="À propos - Innov-Éclat CI | Leader du Nettoyage et de l'Entretien">
+  <meta property="og:description" content="Découvrez l'histoire, la mission, la vision et les valeurs fondamentales d'Innov-Éclat CI en Côte d'Ivoire.">
+  <meta property="og:image" content="https://www.innoveclat.ci/assets/images/nouveau_logo.png">
+  <meta property="og:url" content="https://www.innoveclat.ci/about.html">
+
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  
+  <link rel="icon" type="image/png" href="assets/images/nouveau_logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+
+  <!-- Anti-flash : applique le thème (clair/sombre) avant le premier rendu -->
+  <script>
+    (function () {
+      const saved = localStorage.getItem('innoveclat-theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
-  
+
   <!-- Tailwind CSS Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -28,10 +54,12 @@
               100: '#e8ebf9',
               200: '#c5cdf0',
               300: '#a3aee8',
-              400: '#5e72d7',
-              500: '#19207d',
-              600: '#161b59',
-              700: '#111545',
+              400: '#5662d9',
+              500: '#2933b1',
+              600: '#202a8f',
+              700: '#161d68',
+              800: '#0e1347',
+              900: '#090c2e',
             },
             secondary: {
               50: '#ecfdfd',
@@ -41,6 +69,11 @@
               400: '#35f0f5',
               500: '#16dce2',
               600: '#0fb2b7',
+            },
+            ink: {
+              800: '#10162a',
+              900: '#0b0f19',
+              950: '#05070c',
             }
           },
           fontFamily: {
@@ -52,40 +85,23 @@
     }
   </script>
 </head>
-<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+<body class="bg-slate-50 dark:bg-ink-950 text-slate-800 dark:text-slate-200 transition-colors duration-300">
 
   <!-- 0. Page Loader -->
   <div id="page-loader" class="page-loader">
     <div class="flex flex-col items-center">
-      <img src="assets/images/logo.png" alt="Logo" class="w-32 mb-6 animate-pulse">
+      <img src="assets/images/nouveau_logo.png" alt="Logo Innov-Éclat CI" class="w-32 mb-6 animate-pulse">
       <div class="loader-spinner"></div>
     </div>
   </div>
 
-  <!-- 1. Top Contact Info Bar -->
-  <div class="bg-primary-600 text-white text-xs py-2 px-4 border-b border-white/10 hidden md:block z-50 relative">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex items-center space-x-6">
-        <span><i class="fa fa-phone text-secondary-400 mr-2"></i> +225 07 14 40 22 02 / 05 95 65 37 06</span>
-        <span><i class="fa fa-envelope text-secondary-400 mr-2"></i> infos@innoveclat.ci</span>
-        <span><i class="fa-solid fa-clock text-secondary-400 mr-2"></i> Lun - Ven : 8h30 - 18h / Sam : 9h - 18h</span>
-      </div>
-      <div class="flex items-center space-x-4">
-        <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/innov_eclat/" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/innov-%C3%A9clat-29b2a13a5/" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-tiktok"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 2. Header / Navigation -->
+  <!-- 1. Header / Navigation -->
   <header id="main-navbar" class="sticky top-0 w-full z-40 transition-all duration-300 border-b border-transparent sticky-navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
         <!-- Logo -->
         <a href="index.html" class="flex-shrink-0 flex items-center">
-          <img src="assets/images/logo.png" alt="Innov'Éclat Logo" class="h-14 w-auto dark:brightness-110">
+          <img src="assets/images/nouveau_logo.png" alt="Innov-Éclat Logo" class="h-14 w-auto dark:brightness-110">
         </a>
 
         <!-- Desktop Navigation -->
@@ -96,22 +112,22 @@
           <a href="contact.html" class="text-sm font-semibold hover:text-secondary-400 transition">Contact</a>
         </nav>
 
-        <!-- CTAs & DarkMode Toggle -->
-        <div class="hidden lg:flex items-center space-x-6">
-          <button class="theme-toggle p-2.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Toggle theme">
-            <i class="fa fa-moon text-slate-600 dark:text-slate-400 theme-toggle-dark text-lg"></i>
-            <i class="fa fa-sun text-amber-400 theme-toggle-light text-lg hidden"></i>
+        <!-- CTAs -->
+        <div class="hidden lg:flex items-center space-x-4">
+          <button type="button" class="theme-toggle-btn w-11 h-11 flex-shrink-0 rounded-full border border-slate-200 dark:border-white/10 text-slate-500 dark:text-secondary-400 hover:border-secondary-400 hover:text-secondary-500 dark:hover:text-secondary-300 transition flex items-center justify-center" aria-label="Basculer le thème clair/sombre" title="Basculer le thème clair/sombre">
+            <i class="fa-solid fa-moon theme-icon-dark text-sm"></i>
+            <i class="fa-solid fa-sun theme-icon-light text-sm hidden"></i>
           </button>
           <a href="contact.html" class="bg-primary-500 hover:bg-primary-600 dark:bg-secondary-400 dark:hover:bg-secondary-500 text-white dark:text-slate-950 font-bold px-6 py-2.5 rounded-full transition shadow-lg shadow-primary-500/20 dark:shadow-secondary-400/10 text-sm">
             Demander un devis
           </a>
         </div>
 
-        <!-- Mobile Menu Trigger & DarkMode -->
-        <div class="flex items-center space-x-4 lg:hidden">
-          <button class="theme-toggle p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Toggle theme">
-            <i class="fa fa-moon text-slate-600 dark:text-slate-400 theme-toggle-dark text-lg"></i>
-            <i class="fa fa-sun text-amber-400 theme-toggle-light text-lg hidden"></i>
+        <!-- Mobile Menu Trigger -->
+        <div class="flex items-center space-x-2 lg:hidden">
+          <button type="button" class="theme-toggle-btn w-10 h-10 flex-shrink-0 rounded-full border border-slate-200 dark:border-white/10 text-slate-500 dark:text-secondary-400 hover:border-secondary-400 transition flex items-center justify-center" aria-label="Basculer le thème clair/sombre" title="Basculer le thème clair/sombre">
+            <i class="fa-solid fa-moon theme-icon-dark text-sm"></i>
+            <i class="fa-solid fa-sun theme-icon-light text-sm hidden"></i>
           </button>
           <button id="menu-toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Open menu">
             <i class="fa fa-bars text-2xl"></i>
@@ -121,12 +137,12 @@
     </div>
   </header>
 
-  <!-- 3. Mobile Navigation Drawer -->
+  <!-- 2. Mobile Navigation Drawer -->
   <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex justify-end">
-    <div class="w-80 max-w-xs bg-white dark:bg-slate-900 h-full p-6 shadow-2xl flex flex-col justify-between">
+    <div class="w-full max-w-xs bg-white dark:bg-slate-900 h-full p-6 shadow-2xl flex flex-col justify-between">
       <div>
         <div class="flex justify-between items-center mb-10">
-          <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto">
+          <img src="assets/images/nouveau_logo.png" alt="Logo" class="h-10 w-auto">
           <button id="menu-close" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition text-slate-500" aria-label="Close menu">
             <i class="fa fa-times text-xl"></i>
           </button>
@@ -150,28 +166,28 @@
     </div>
   </div>
 
-  <!-- 4. Page Header Banner -->
-  <section class="relative bg-primary-700 dark:bg-slate-900 py-20 overflow-hidden text-white transition-colors duration-300">
+  <!-- 3. Page Header Banner -->
+  <section class="relative bg-primary-700 dark:bg-ink-900 py-20 overflow-hidden text-white transition-colors duration-300">
     <div class="hero-glow top-0 left-0 scale-75"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-      <h1 class="text-4xl md:text-5xl font-extrabold font-display">À propos d'Innov'Éclat CI</h1>
+      <h1 class="text-4xl md:text-5xl font-extrabold font-display">À propos d'Innov-Éclat CI</h1>
       <p class="mt-4 text-slate-200 max-w-2xl mx-auto text-sm md:text-base">
         Découvrez notre histoire, notre vision stratégique et les valeurs fondamentales qui animent nos interventions quotidiennes en Côte d'Ivoire.
       </p>
     </div>
   </section>
 
-  <!-- 5. Mission & Vision Segment -->
+  <!-- 4. Mission & Vision Segment -->
   <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <!-- Story -->
       <div class="reveal-left">
-        <span class="text-sm font-bold text-primary-500 dark:text-secondary-400 uppercase tracking-widest">Notre Raison d'être</span>
+        <span class="text-sm font-bold text-primary-500 dark:text-secondary-400 uppercase tracking-widest"><i class="fa-solid fa-sparkles mr-2"></i>Notre Raison d'être</span>
         <h2 class="text-3xl font-extrabold text-primary-600 dark:text-white mt-3 font-display">Une histoire de rigueur et d'engagement</h2>
-        <p class="mt-6 text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-          **INNOV-ÉCLAT** est née d'une volonté simple : offrir aux entreprises et aux particuliers ivoiriens un service de nettoyage d'une qualité rigoureuse, s'appuyant sur des technologies modernes et un personnel hautement qualifié.
+        <p class="mt-6 text-slate-600 dark:text-slate-300 leading-relaxed">
+          <strong>Innov-Éclat</strong> est née d'une volonté simple : offrir aux entreprises et aux particuliers ivoiriens un service de nettoyage d'une qualité rigoureuse, s'appuyant sur des technologies modernes et un personnel hautement qualifié.
         </p>
-        <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+        <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
           Nous accompagnons nos clients à Abidjan et sur l'ensemble du territoire ivoirien dans le maintien de cadres sains, propres et sécurisés. Que ce soit pour une désinfection complexe ou pour un nettoyage après gros travaux de construction, nous mobilisons le matériel adapté pour dépasser vos attentes.
         </p>
       </div>
@@ -179,21 +195,21 @@
       <!-- Vision & Mission Visual Cards -->
       <div class="space-y-8 reveal-right">
         <!-- Vision card -->
-        <div class="bg-gradient-to-r from-primary-600 to-primary-700 dark:from-slate-900 dark:to-slate-800 text-white rounded-3xl p-8 shadow-xl border border-white/5 relative overflow-hidden group">
+        <div class="bg-gradient-to-r from-primary-600 to-primary-700 dark:from-ink-900 dark:to-ink-950 text-white rounded-3xl p-8 shadow-xl border border-white/5 relative overflow-hidden group">
           <div class="absolute right-0 bottom-0 text-white/5 text-9xl translate-x-10 translate-y-10 group-hover:scale-110 transition duration-300"><i class="fa fa-eye"></i></div>
           <span class="text-xs uppercase font-bold tracking-wider text-secondary-400"><i class="fa fa-eye mr-2"></i>Notre Vision</span>
           <h3 class="text-2xl font-bold font-display mt-2">Le partenaire incontournable</h3>
-          <p class="mt-4 text-slate-200 text-sm leading-relaxed text-justify">
+          <p class="mt-4 text-slate-200 text-sm leading-relaxed">
             Devenir le leader incontournable des solutions de nettoyage, d'entretien et d'assainissement en Côte d'Ivoire, reconnu pour la qualité constante et l'innovation constante de nos prestations.
           </p>
         </div>
 
         <!-- Mission card -->
         <div class="bg-cyan-500/10 border border-secondary-400/30 text-slate-950 dark:text-white rounded-3xl p-8 shadow-xl relative overflow-hidden group">
-          <div class="absolute right-0 bottom-0 text-slate-950/5 dark:text-white/5 text-9xl translate-x-10 translate-y-10 group-hover:scale-110 transition duration-300"><i class="fa fa-sparkles"></i></div>
+          <div class="absolute right-0 bottom-0 text-slate-950/5 dark:text-white/5 text-9xl translate-x-10 translate-y-10 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
           <span class="text-xs uppercase font-bold tracking-wider text-secondary-500 dark:text-secondary-400"><i class="fa fa-hand-holding-hand mr-2"></i>Notre Mission</span>
           <h3 class="text-2xl font-bold font-display mt-2 text-primary-600 dark:text-white">Expertise et moyens au service du client</h3>
-          <p class="mt-4 text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify">
+          <p class="mt-4 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
             Mettre notre savoir-faire, nos produits certifiés et nos équipes professionnelles au service de nos clients pour leur garantir un cadre agréable, sain et écoresponsable.
           </p>
         </div>
@@ -201,58 +217,58 @@
     </div>
   </section>
 
-  <!-- 6. Core Values Grid Section -->
-  <section class="py-24 bg-slate-100 dark:bg-slate-900 transition-colors duration-300">
+  <!-- 5. Core Values Grid Section -->
+  <section class="py-24 bg-slate-100 dark:bg-ink-900 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-        <span class="text-sm font-bold text-primary-500 dark:text-secondary-400 uppercase tracking-widest">Nos fondations</span>
+        <span class="text-sm font-bold text-primary-500 dark:text-secondary-400 uppercase tracking-widest"><i class="fa-solid fa-sparkles mr-2"></i>Nos fondations</span>
         <h2 class="text-3xl font-extrabold text-primary-600 dark:text-white mt-3 font-display">Les Valeurs qui nous guident</h2>
         <p class="mt-4 text-slate-500 dark:text-slate-400">
-          Chaque collaborateur d'Innov'Éclat CI incarne ces quatre piliers majeurs au quotidien.
+          Chaque collaborateur d'Innov-Éclat CI incarne ces quatre piliers majeurs au quotidien.
         </p>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Value 1 -->
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center group reveal">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl hover:shadow-primary-500/10 dark:hover:shadow-secondary-400/10 hover:-translate-y-1 transition-all duration-300 text-center group reveal">
           <div class="w-16 h-16 bg-primary-100 dark:bg-primary-500/10 text-primary-600 dark:text-secondary-400 rounded-full flex items-center justify-center text-3xl mx-auto group-hover:scale-110 transition duration-300">
             <i class="fa-solid fa-medal"></i>
           </div>
           <h3 class="text-lg font-bold font-display text-primary-600 dark:text-white mt-6">Qualité</h3>
-          <p class="mt-3 text-slate-500 dark:text-slate-400 text-xs leading-relaxed text-justify">
+          <p class="mt-3 text-slate-500 dark:text-slate-400 text-xs leading-relaxed">
             Des contrôles rigoureux réguliers et des équipements professionnels de pointe pour un résultat de nettoyage impeccable.
           </p>
         </div>
 
         <!-- Value 2 -->
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center group reveal delay-100">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl hover:shadow-primary-500/10 dark:hover:shadow-secondary-400/10 hover:-translate-y-1 transition-all duration-300 text-center group reveal delay-100">
           <div class="w-16 h-16 bg-primary-100 dark:bg-primary-500/10 text-primary-600 dark:text-secondary-400 rounded-full flex items-center justify-center text-3xl mx-auto group-hover:scale-110 transition duration-300">
             <i class="fa-solid fa-user-tie"></i>
           </div>
           <h3 class="text-lg font-bold font-display text-primary-600 dark:text-white mt-6">Professionnalisme</h3>
-          <p class="mt-3 text-slate-500 dark:text-slate-400 text-xs leading-relaxed text-justify">
+          <p class="mt-3 text-slate-500 dark:text-slate-400 text-xs leading-relaxed">
             Une équipe formée, ponctuelle et discrète intervenant dans le respect total des protocoles de sécurité.
           </p>
         </div>
 
         <!-- Value 3 -->
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center group reveal delay-200">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl hover:shadow-primary-500/10 dark:hover:shadow-secondary-400/10 hover:-translate-y-1 transition-all duration-300 text-center group reveal delay-200">
           <div class="w-16 h-16 bg-primary-100 dark:bg-primary-500/10 text-primary-600 dark:text-secondary-400 rounded-full flex items-center justify-center text-3xl mx-auto group-hover:scale-110 transition duration-300">
             <i class="fa-solid fa-handshake"></i>
           </div>
           <h3 class="text-lg font-bold font-display text-primary-600 dark:text-white mt-6">Proximité</h3>
-          <p class="mt-3 text-slate-500 dark:text-slate-400 text-xs leading-relaxed text-justify">
+          <p class="mt-3 text-slate-500 dark:text-slate-400 text-xs leading-relaxed">
             Une écoute attentive pour proposer des solutions et des plannings adaptés à vos réalités.
           </p>
         </div>
 
         <!-- Value 4 -->
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center group reveal delay-300">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md hover:shadow-xl hover:shadow-primary-500/10 dark:hover:shadow-secondary-400/10 hover:-translate-y-1 transition-all duration-300 text-center group reveal delay-300">
           <div class="w-16 h-16 bg-primary-100 dark:bg-primary-500/10 text-primary-600 dark:text-secondary-400 rounded-full flex items-center justify-center text-3xl mx-auto group-hover:scale-110 transition duration-300">
             <i class="fa-solid fa-lightbulb"></i>
           </div>
           <h3 class="text-lg font-bold font-display text-primary-600 dark:text-white mt-6">Innovation</h3>
-          <p class="mt-3 text-slate-500 dark:text-slate-400 text-xs leading-relaxed text-justify">
+          <p class="mt-3 text-slate-500 dark:text-slate-400 text-xs leading-relaxed">
             L'utilisation continue de nouvelles techniques de dératisation et de produits de nettoyage performants.
           </p>
         </div>
@@ -260,26 +276,31 @@
     </div>
   </section>
 
-  <!-- 7. Team & Commitment Showcase -->
+  <!-- 6. Team & Commitment Showcase -->
   <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-16 items-center">
-      <!-- Illustrative grid -->
-      <div class="relative reveal-left order-last lg:order-first">
-        <img src="assets/images/hero2.jpg" alt="Équipements de nettoyage" class="rounded-3xl shadow-xl w-full object-cover h-[350px]">
-        <div class="absolute -top-6 -left-6 bg-secondary-400 text-slate-950 p-6 rounded-2xl shadow-xl hidden sm:block max-w-[200px] font-bold text-center">
-          <span class="block text-4xl font-extrabold font-display">100%</span>
-          <span class="text-xs uppercase tracking-wider block mt-1">Conformité aux normes sanitaires</span>
+      <!-- Illustrative grid (asymmetrical columns showing team and equipment) -->
+      <div class="relative reveal-left order-last lg:order-first grid grid-cols-2 gap-4">
+        <div class="relative">
+          <img src="assets/images/presentation.jpg" alt="Équipe de nettoyage Innov-Éclat" class="rounded-3xl shadow-xl w-full object-cover h-[320px]">
+        </div>
+        <div class="relative mt-8">
+          <img src="assets/images/presentation1.jpg" alt="Équipements de nettoyage" class="rounded-3xl shadow-xl w-full object-cover h-[320px]">
+          <div class="absolute -bottom-6 -right-6 bg-secondary-400 text-slate-950 p-6 rounded-2xl shadow-xl hidden sm:block max-w-[180px] font-bold text-center z-10">
+            <span class="block text-4xl font-extrabold font-display">100%</span>
+            <span class="text-xs uppercase tracking-wider block mt-1">Conformité aux normes</span>
+          </div>
         </div>
       </div>
 
       <!-- Commitments -->
       <div class="reveal-right">
-        <span class="text-sm font-bold text-primary-500 dark:text-secondary-400 uppercase tracking-widest">Notre Engagement Qualité</span>
+        <span class="text-sm font-bold text-primary-500 dark:text-secondary-400 uppercase tracking-widest"><i class="fa-solid fa-sparkles mr-2"></i>Notre Engagement Qualité</span>
         <h2 class="text-3xl font-extrabold text-primary-600 dark:text-white mt-3 font-display">Une hygiène et une sécurité irréprochables</h2>
-        <p class="mt-6 text-slate-600 dark:text-slate-300 leading-relaxed text-justify font-semibold">
+        <p class="mt-6 text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
           Nous croyons fermement qu'un environnement de travail ou de vie propre est un facteur direct de santé et de productivité.
         </p>
-        <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+        <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
           C'est pourquoi nous veillons à ce que chacun de nos agents applique rigoureusement les protocoles de désinfection de l'OMS et des autorités locales. Les produits chimiques utilisés sont validés, performants et appliqués avec les équipements de protection nécessaires pour préserver votre santé.
         </p>
         <div class="mt-8 space-y-4">
@@ -300,21 +321,21 @@
     </div>
   </section>
 
-  <!-- 8. Footer Section -->
+  <!-- 7. Footer Section -->
   <footer class="bg-slate-900 text-slate-400 pt-20 pb-8 border-t border-white/5 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         <!-- Brand Info -->
         <div>
-          <img src="assets/images/logo.png" alt="Logo Innov'Éclat" class="h-14 w-auto mb-6">
-          <p class="text-sm text-slate-400 leading-relaxed text-justify">
+          <img src="assets/images/nouveau_logo.png" alt="Logo Innov-Éclat" class="h-14 w-auto mb-6">
+          <p class="text-sm text-slate-400 leading-relaxed">
             Société spécialisée dans le nettoyage professionnel, l'entretien industriel et résidentiel, la dératisation et désinsectisation en Côte d'Ivoire.
           </p>
           <div class="flex items-center space-x-4 mt-6">
-            <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/innov_eclat/" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/innov-%C3%A9clat-29b2a13a5/" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/innov_eclat/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/innov-%C3%A9clat-29b2a13a5/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-tiktok"></i></a>
           </div>
         </div>
 
@@ -361,17 +382,60 @@
       </div>
 
       <div class="border-t border-white/5 pt-8 text-center text-xs flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-        <p>&copy; 2026 Innov'Éclat CI. Tous droits réservés. Création de site premium.</p>
+        <p>&copy; 2026 Innov-Éclat CI. Tous droits réservés. Création de site premium.</p>
         <div class="flex space-x-6">
-          <a href="#" class="hover:text-secondary-400 transition">Politique de confidentialité</a>
-          <a href="#" class="hover:text-secondary-400 transition">Mentions légales</a>
+          <a href="maintenance.html" class="hover:text-secondary-400 transition">Politique de confidentialité</a>
+          <a href="maintenance.html" class="hover:text-secondary-400 transition">Mentions légales</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- 9. Back to Top Button -->
-  <button id="back-to-top" class="fixed bottom-6 right-6 p-4 rounded-full bg-primary-500 dark:bg-secondary-400 text-white dark:text-slate-950 shadow-2xl hover:scale-110 transition duration-300 opacity-0 invisible translate-y-4 z-30" aria-label="Back to top">
+  <!-- Floating Glassmorphic Contact Dock (macOS Style) -->
+  <div id="floating-contact-dock" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center max-w-[94vw] overflow-x-auto bg-slate-900/90 dark:bg-slate-950/90 border border-white/10 rounded-full py-2 px-3 sm:py-2.5 sm:px-4 shadow-2xl backdrop-blur-lg text-white transition-all duration-500 transform translate-y-24 opacity-0 scale-95 hover:scale-[1.02]">
+    <div class="flex items-center space-x-2 sm:space-x-3">
+      <!-- Phone Call -->
+      <a href="tel:+2250714402202" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-secondary-400/20 text-secondary-400 flex items-center justify-center hover:scale-110 transition duration-300" aria-label="Appeler" title="Appeler">
+        <i class="fa fa-phone text-sm"></i>
+      </a>
+
+      <!-- WhatsApp Quick Chat -->
+      <a href="https://wa.me/2250714402202" target="_blank" rel="noopener noreferrer" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-base sm:text-lg hover:scale-110 transition duration-300" aria-label="WhatsApp" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <!-- Email Direct -->
+      <a href="mailto:infos@innoveclat.ci" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-primary-500/30 text-secondary-400 flex items-center justify-center hover:scale-110 transition duration-300" aria-label="Email" title="Email">
+        <i class="fa fa-envelope text-sm"></i>
+      </a>
+
+      <!-- Divider -->
+      <span class="h-6 w-px bg-white/10 flex-shrink-0"></span>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/innov_eclat/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-white/5 hover:bg-secondary-400 hover:text-slate-950 flex items-center justify-center text-white transition duration-300" aria-label="Instagram" title="Instagram">
+        <i class="fab fa-instagram text-sm"></i>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-white/5 hover:bg-secondary-400 hover:text-slate-950 flex items-center justify-center text-white transition duration-300" aria-label="Facebook" title="Facebook">
+        <i class="fab fa-facebook-f text-sm"></i>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" rel="noopener noreferrer" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-white/5 hover:bg-secondary-400 hover:text-slate-950 flex items-center justify-center text-white transition duration-300" aria-label="TikTok" title="TikTok">
+        <i class="fab fa-tiktok text-sm"></i>
+      </a>
+    </div>
+
+    <!-- Close button -->
+    <button id="close-floating-dock" class="ml-2 sm:ml-3 flex-shrink-0 p-1.5 rounded-full hover:bg-white/10 text-slate-400 hover:text-rose-400 transition" aria-label="Fermer le dock de contact">
+      <i class="fa fa-times text-xs"></i>
+    </button>
+  </div>
+
+  <!-- 8. Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-24 sm:bottom-6 right-6 p-4 rounded-full bg-primary-500 dark:bg-secondary-400 text-white dark:text-slate-950 shadow-2xl hover:scale-110 transition duration-300 opacity-0 invisible translate-y-4 z-30" aria-label="Back to top">
     <i class="fa fa-arrow-up text-lg"></i>
   </button>
 
@@ -379,3 +443,4 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+

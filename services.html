@@ -1,20 +1,46 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nos Services - Innov'Éclat CI | Solutions de Nettoyage Haut de Gamme</title>
+  <title>Nos Services - Innov-Éclat CI | Solutions de Nettoyage Haut de Gamme</title>
   <meta name="description" content="Découvrez nos 8 services de nettoyage, d'entretien, de désinsectisation, de transport et de gestion de déchets en Côte d'Ivoire. Demandez votre devis gratuit.">
-  
+  <meta name="keywords" content="nettoyage, entretien, désinsectisation, dératisation, fin de chantier, Côte d'Ivoire, Abidjan, Innov-Éclat">
+  <meta name="author" content="Innov-Éclat CI">
+  <link rel="canonical" href="https://www.innoveclat.ci/services.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nos Services - Innov-Éclat CI | Solutions de Nettoyage Haut de Gamme">
+  <meta property="og:description" content="Découvrez nos services de nettoyage, d'entretien, de désinsectisation et de gestion de déchets en Côte d'Ivoire.">
+  <meta property="og:image" content="https://www.innoveclat.ci/assets/images/nouveau_logo.png">
+  <meta property="og:url" content="https://www.innoveclat.ci/services.html">
+
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  
+  <link rel="icon" type="image/png" href="assets/images/nouveau_logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+
+  <!-- Anti-flash : applique le thème (clair/sombre) avant le premier rendu -->
+  <script>
+    (function () {
+      const saved = localStorage.getItem('innoveclat-theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
-  
+
   <!-- Tailwind CSS Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -28,10 +54,12 @@
               100: '#e8ebf9',
               200: '#c5cdf0',
               300: '#a3aee8',
-              400: '#5e72d7',
-              500: '#19207d',
-              600: '#161b59',
-              700: '#111545',
+              400: '#5662d9',
+              500: '#2933b1',
+              600: '#202a8f',
+              700: '#161d68',
+              800: '#0e1347',
+              900: '#090c2e',
             },
             secondary: {
               50: '#ecfdfd',
@@ -41,6 +69,11 @@
               400: '#35f0f5',
               500: '#16dce2',
               600: '#0fb2b7',
+            },
+            ink: {
+              800: '#10162a',
+              900: '#0b0f19',
+              950: '#05070c',
             }
           },
           fontFamily: {
@@ -52,40 +85,24 @@
     }
   </script>
 </head>
-<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+<body class="bg-slate-50 dark:bg-ink-950 text-slate-800 dark:text-slate-200 transition-colors duration-300">
 
   <!-- 0. Page Loader -->
   <div id="page-loader" class="page-loader">
     <div class="flex flex-col items-center">
-      <img src="assets/images/logo.png" alt="Logo" class="w-32 mb-6 animate-pulse">
+      <img src="assets/images/nouveau_logo.png" alt="Logo Innov-Éclat CI" class="w-32 mb-6 animate-pulse">
       <div class="loader-spinner"></div>
     </div>
   </div>
 
-  <!-- 1. Top Contact Info Bar -->
-  <div class="bg-primary-600 text-white text-xs py-2 px-4 border-b border-white/10 hidden md:block z-50 relative">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex items-center space-x-6">
-        <span><i class="fa fa-phone text-secondary-400 mr-2"></i> +225 07 14 40 22 02 / 05 95 65 37 06</span>
-        <span><i class="fa fa-envelope text-secondary-400 mr-2"></i> infos@innoveclat.ci</span>
-        <span><i class="fa-solid fa-clock text-secondary-400 mr-2"></i> Lun - Ven : 8h30 - 18h / Sam : 9h - 18h</span>
-      </div>
-      <div class="flex items-center space-x-4">
-        <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/innov_eclat/" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/innov-%C3%A9clat-29b2a13a5/" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" class="hover:text-secondary-400 transition"><i class="fab fa-tiktok"></i></a>
-      </div>
-    </div>
-  </div>
 
-  <!-- 2. Header / Navigation -->
+  <!-- 1. Header / Navigation -->
   <header id="main-navbar" class="sticky top-0 w-full z-40 transition-all duration-300 border-b border-transparent sticky-navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
         <!-- Logo -->
         <a href="index.html" class="flex-shrink-0 flex items-center">
-          <img src="assets/images/logo.png" alt="Innov'Éclat Logo" class="h-14 w-auto dark:brightness-110">
+          <img src="assets/images/nouveau_logo.png" alt="Innov-Éclat Logo" class="h-14 w-auto dark:brightness-110">
         </a>
 
         <!-- Desktop Navigation -->
@@ -96,22 +113,22 @@
           <a href="contact.html" class="text-sm font-semibold hover:text-secondary-400 transition">Contact</a>
         </nav>
 
-        <!-- CTAs & DarkMode Toggle -->
-        <div class="hidden lg:flex items-center space-x-6">
-          <button class="theme-toggle p-2.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Toggle theme">
-            <i class="fa fa-moon text-slate-600 dark:text-slate-400 theme-toggle-dark text-lg"></i>
-            <i class="fa fa-sun text-amber-400 theme-toggle-light text-lg hidden"></i>
+        <!-- CTAs -->
+        <div class="hidden lg:flex items-center space-x-4">
+          <button type="button" class="theme-toggle-btn w-11 h-11 flex-shrink-0 rounded-full border border-slate-200 dark:border-white/10 text-slate-500 dark:text-secondary-400 hover:border-secondary-400 hover:text-secondary-500 dark:hover:text-secondary-300 transition flex items-center justify-center" aria-label="Basculer le thème clair/sombre" title="Basculer le thème clair/sombre">
+            <i class="fa-solid fa-moon theme-icon-dark text-sm"></i>
+            <i class="fa-solid fa-sun theme-icon-light text-sm hidden"></i>
           </button>
           <a href="contact.html" class="bg-primary-500 hover:bg-primary-600 dark:bg-secondary-400 dark:hover:bg-secondary-500 text-white dark:text-slate-950 font-bold px-6 py-2.5 rounded-full transition shadow-lg shadow-primary-500/20 dark:shadow-secondary-400/10 text-sm">
             Demander un devis
           </a>
         </div>
 
-        <!-- Mobile Menu Trigger & DarkMode -->
-        <div class="flex items-center space-x-4 lg:hidden">
-          <button class="theme-toggle p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Toggle theme">
-            <i class="fa fa-moon text-slate-600 dark:text-slate-400 theme-toggle-dark text-lg"></i>
-            <i class="fa fa-sun text-amber-400 theme-toggle-light text-lg hidden"></i>
+        <!-- Mobile Menu Trigger -->
+        <div class="flex items-center space-x-2 lg:hidden">
+          <button type="button" class="theme-toggle-btn w-10 h-10 flex-shrink-0 rounded-full border border-slate-200 dark:border-white/10 text-slate-500 dark:text-secondary-400 hover:border-secondary-400 transition flex items-center justify-center" aria-label="Basculer le thème clair/sombre" title="Basculer le thème clair/sombre">
+            <i class="fa-solid fa-moon theme-icon-dark text-sm"></i>
+            <i class="fa-solid fa-sun theme-icon-light text-sm hidden"></i>
           </button>
           <button id="menu-toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Open menu">
             <i class="fa fa-bars text-2xl"></i>
@@ -121,12 +138,12 @@
     </div>
   </header>
 
-  <!-- 3. Mobile Navigation Drawer -->
+  <!-- 2. Mobile Navigation Drawer -->
   <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex justify-end">
-    <div class="w-80 max-w-xs bg-white dark:bg-slate-900 h-full p-6 shadow-2xl flex flex-col justify-between">
+    <div class="w-full max-w-xs bg-white dark:bg-slate-900 h-full p-6 shadow-2xl flex flex-col justify-between">
       <div>
         <div class="flex justify-between items-center mb-10">
-          <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto">
+          <img src="assets/images/nouveau_logo.png" alt="Logo" class="h-10 w-auto">
           <button id="menu-close" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition text-slate-500" aria-label="Close menu">
             <i class="fa fa-times text-xl"></i>
           </button>
@@ -150,8 +167,8 @@
     </div>
   </div>
 
-  <!-- 4. Page Header Banner -->
-  <section class="relative bg-primary-700 dark:bg-slate-900 py-20 overflow-hidden text-white transition-colors duration-300">
+  <!-- 3. Page Header Banner -->
+  <section class="relative bg-primary-700 dark:bg-ink-900 py-20 overflow-hidden text-white transition-colors duration-300">
     <div class="hero-glow top-0 left-0 scale-75"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
       <h1 class="text-4xl md:text-5xl font-extrabold font-display">Nos Services Professionnels</h1>
@@ -161,10 +178,10 @@
     </div>
   </section>
 
-  <!-- 5. Services Detailed Grid Section -->
+  <!-- 4. Services Detailed Grid Section -->
   <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid md:grid-cols-2 gap-10 lg:gap-12">
-      
+
       <!-- Service 1: Nettoyage de fin de chantier -->
       <div id="nettoyage-chantier" class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300 reveal-left">
         <div>
@@ -179,7 +196,7 @@
             </div>
           </div>
           <div class="p-8">
-            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
               Après la poussière et le désordre des travaux, redonnez vie à vos locaux. Nous intervenons rapidement pour évacuer les gravats, désincruster les résidus de peinture, de plâtre ou de colle, laver les sols et vitres pour une livraison propre et sécurisée.
             </p>
             <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
@@ -199,7 +216,7 @@
       </div>
 
       <!-- Service 2: Nettoyage de canapés, tapis et moquettes -->
-      <div id="nettoyage-textile" class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300 reveal-right">
+      <div id="nettoyage-textiles" class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300 reveal-right">
         <div>
           <div class="h-64 relative overflow-hidden">
             <img src="assets/images/service2.jpg" alt="Nettoyage de canapés, tapis" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -212,7 +229,7 @@
             </div>
           </div>
           <div class="p-8">
-            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
               Les canapés et textiles accumulent la saleté, les acariens et les odeurs. Grâce à nos nettoyeurs par injection-extraction professionnels, nous redonnons leur éclat d'origine à vos ameublements et assurons une hygiène optimale.
             </p>
             <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
@@ -245,7 +262,7 @@
             </div>
           </div>
           <div class="p-8">
-            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
               Que ce soit pour un ménage régulier à domicile ou pour la maintenance hygiénique de surfaces de production industrielles, nous mettons en place des plannings sur-mesure pour vous garantir des environnements de travail et de vie confortables.
             </p>
             <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
@@ -278,7 +295,7 @@
             </div>
           </div>
           <div class="p-8">
-            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
               Les nuisibles nuisent à votre santé et à l'image de votre établissement. Nous proposons des solutions d'éradication et de prévention ciblées (contre rongeurs, cafards, moustiques, termites) pour garder vos locaux sains.
             </p>
             <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
@@ -311,7 +328,7 @@
             </div>
           </div>
           <div class="p-8">
-            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
               Nous vendons et louons des machines professionnelles de nettoyage à haute performance pour vos travaux ponctuels ou réguliers. Notre équipe assure également la mise en service et la démonstration.
             </p>
             <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
@@ -344,7 +361,7 @@
             </div>
           </div>
           <div class="p-8">
-            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
               Au-delà de la propreté, nous vous aidons à agencer vos pièces pour créer des espaces modernes, accueillants et fonctionnels. Optimisez le confort de vos bureaux ou le style de votre domicile.
             </p>
             <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
@@ -377,7 +394,7 @@
             </div>
           </div>
           <div class="p-8">
-            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
               Nous mettons à votre service notre logistique et nos véhicules de transport pour assurer le transport sécurisé de vos matériels ou l'appui à vos déménagements résidentiels et professionnels.
             </p>
             <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
@@ -410,7 +427,7 @@
             </div>
           </div>
           <div class="p-8">
-            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify mb-6">
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
               Assurez l'élimination réglementaire de vos déchets d'activité ou encombrants. Nous trions et évacuons vos rebuts vers les décharges autorisées, en favorisant les démarches écoresponsables.
             </p>
             <h4 class="font-bold text-sm text-primary-600 dark:text-secondary-400 uppercase tracking-wider mb-3">Prestations incluses :</h4>
@@ -432,21 +449,21 @@
     </div>
   </section>
 
-  <!-- 6. Footer Section -->
+  <!-- 5. Footer Section -->
   <footer class="bg-slate-900 text-slate-400 pt-20 pb-8 border-t border-white/5 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         <!-- Brand Info -->
         <div>
-          <img src="assets/images/logo.png" alt="Logo Innov'Éclat" class="h-14 w-auto mb-6">
-          <p class="text-sm text-slate-400 leading-relaxed text-justify">
+          <img src="assets/images/nouveau_logo.png" alt="Logo Innov-Éclat" class="h-14 w-auto mb-6">
+          <p class="text-sm text-slate-400 leading-relaxed">
             Société spécialisée dans le nettoyage professionnel, l'entretien industriel et résidentiel, la dératisation et désinsectisation en Côte d'Ivoire.
           </p>
           <div class="flex items-center space-x-4 mt-6">
-            <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/innov_eclat/" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/innov-%C3%A9clat-29b2a13a5/" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/innov_eclat/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/innov-%C3%A9clat-29b2a13a5/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-white transition"><i class="fab fa-tiktok"></i></a>
           </div>
         </div>
 
@@ -493,17 +510,60 @@
       </div>
 
       <div class="border-t border-white/5 pt-8 text-center text-xs flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-        <p>&copy; 2026 Innov'Éclat CI. Tous droits réservés. Création de site premium.</p>
+        <p>&copy; 2026 Innov-Éclat CI. Tous droits réservés. Création de site premium.</p>
         <div class="flex space-x-6">
-          <a href="#" class="hover:text-secondary-400 transition">Politique de confidentialité</a>
-          <a href="#" class="hover:text-secondary-400 transition">Mentions légales</a>
+          <a href="maintenance.html" class="hover:text-secondary-400 transition">Politique de confidentialité</a>
+          <a href="maintenance.html" class="hover:text-secondary-400 transition">Mentions légales</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- 7. Back to Top Button -->
-  <button id="back-to-top" class="fixed bottom-6 right-6 p-4 rounded-full bg-primary-500 dark:bg-secondary-400 text-white dark:text-slate-950 shadow-2xl hover:scale-110 transition duration-300 opacity-0 invisible translate-y-4 z-30" aria-label="Back to top">
+  <!-- Floating Glassmorphic Contact Dock (macOS Style) -->
+  <div id="floating-contact-dock" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center max-w-[94vw] overflow-x-auto bg-slate-900/90 dark:bg-slate-950/90 border border-white/10 rounded-full py-2 px-3 sm:py-2.5 sm:px-4 shadow-2xl backdrop-blur-lg text-white transition-all duration-500 transform translate-y-24 opacity-0 scale-95 hover:scale-[1.02]">
+    <div class="flex items-center space-x-2 sm:space-x-3">
+      <!-- Phone Call -->
+      <a href="tel:+2250714402202" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-secondary-400/20 text-secondary-400 flex items-center justify-center hover:scale-110 transition duration-300" aria-label="Appeler" title="Appeler">
+        <i class="fa fa-phone text-sm"></i>
+      </a>
+
+      <!-- WhatsApp Quick Chat -->
+      <a href="https://wa.me/2250714402202" target="_blank" rel="noopener noreferrer" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-base sm:text-lg hover:scale-110 transition duration-300" aria-label="WhatsApp" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <!-- Email Direct -->
+      <a href="mailto:infos@innoveclat.ci" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-primary-500/30 text-secondary-400 flex items-center justify-center hover:scale-110 transition duration-300" aria-label="Email" title="Email">
+        <i class="fa fa-envelope text-sm"></i>
+      </a>
+
+      <!-- Divider -->
+      <span class="h-6 w-px bg-white/10 flex-shrink-0"></span>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/innov_eclat/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-white/5 hover:bg-secondary-400 hover:text-slate-950 flex items-center justify-center text-white transition duration-300" aria-label="Instagram" title="Instagram">
+        <i class="fab fa-instagram text-sm"></i>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-white/5 hover:bg-secondary-400 hover:text-slate-950 flex items-center justify-center text-white transition duration-300" aria-label="Facebook" title="Facebook">
+        <i class="fab fa-facebook-f text-sm"></i>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" rel="noopener noreferrer" class="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded-full bg-white/5 hover:bg-secondary-400 hover:text-slate-950 flex items-center justify-center text-white transition duration-300" aria-label="TikTok" title="TikTok">
+        <i class="fab fa-tiktok text-sm"></i>
+      </a>
+    </div>
+
+    <!-- Close button -->
+    <button id="close-floating-dock" class="ml-2 sm:ml-3 flex-shrink-0 p-1.5 rounded-full hover:bg-white/10 text-slate-400 hover:text-rose-400 transition" aria-label="Fermer le dock de contact">
+      <i class="fa fa-times text-xs"></i>
+    </button>
+  </div>
+
+  <!-- 6. Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-24 sm:bottom-6 right-6 p-4 rounded-full bg-primary-500 dark:bg-secondary-400 text-white dark:text-slate-950 shadow-2xl hover:scale-110 transition duration-300 opacity-0 invisible translate-y-4 z-30" aria-label="Back to top">
     <i class="fa fa-arrow-up text-lg"></i>
   </button>
 
@@ -511,3 +571,4 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+

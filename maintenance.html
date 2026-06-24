@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance - Innov-Éclat CI</title>
+  <meta name="description" content="Cette page est actuellement en cours de rédaction. Revenez très bientôt pour en savoir plus.">
+  <link rel="icon" type="image/png" href="assets/images/nouveau_logo.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS link to keep integration aligned -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              500: '#2933b1',
+              600: '#202a8f',
+            },
+            secondary: {
+              400: '#35f0f5',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#05070c] text-slate-200 min-h-screen flex flex-col justify-between font-sans relative overflow-hidden">
+  
+  <!-- Premium Background Glow Elements (aligned with site identity) -->
+  <div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-secondary-400/5 rounded-full filter blur-[120px] pointer-events-none"></div>
+  <div class="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-primary-500/10 rounded-full filter blur-[120px] pointer-events-none"></div>
+
+  <!-- Ambient background dot overlay -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle,rgba(53,240,245,0.02)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none"></div>
+
+  <!-- Top bar / logo -->
+  <header class="py-8 px-6 max-w-7xl mx-auto w-full flex justify-between items-center relative z-10">
+    <a href="index.html" class="hover:scale-105 transition duration-300">
+      <img src="assets/images/nouveau_logo.png" alt="Logo Innov-Éclat" class="h-14 w-auto">
+    </a>
+    <a href="index.html" class="text-xs font-bold text-slate-400 hover:text-secondary-400 uppercase tracking-widest transition duration-300">
+      <i class="fa-solid fa-home mr-1"></i> Accueil
+    </a>
+  </header>
+
+  <!-- Main message -->
+  <main class="flex-grow flex flex-col items-center justify-center text-center px-6 max-w-2xl mx-auto relative z-10 py-12">
+    <!-- Icon Container with glassmorphic glowing border -->
+    <div class="relative mb-8 group">
+      <div class="absolute inset-0 bg-gradient-to-tr from-primary-500 to-secondary-400 rounded-3xl transform rotate-3 scale-105 opacity-30 filter blur-md group-hover:rotate-6 transition duration-500"></div>
+      <div class="relative w-24 h-24 bg-slate-900/80 border border-white/10 text-secondary-400 rounded-3xl flex items-center justify-center text-4xl shadow-2xl backdrop-blur-xl">
+        <i class="fa-solid fa-wand-magic-sparkles animate-pulse"></i>
+      </div>
+    </div>
+    
+    <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-secondary-400/15 text-secondary-400 border border-secondary-400/20 mb-4 uppercase tracking-widest">
+      Mise à jour du contenu
+    </span>
+
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-white mb-6 tracking-tight leading-tight">
+      Page en cours de <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary-400 to-cyan-300">rédaction</span>
+    </h1>
+    
+    <p class="text-slate-400 leading-relaxed text-sm md:text-base mb-10 max-w-lg font-medium">
+      Nos équipes travaillent actuellement à la rédaction des détails de cette page afin de vous offrir une clarté et une transparence totales. Merci pour votre patience.
+    </p>
+
+    <!-- Émoji souriant premium -->
+    <div class="text-4xl animate-bounce duration-1000">
+      😊
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-xs text-slate-500 border-t border-white/5 relative z-10">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p>&copy; 2026 Innov-Éclat CI. Tous droits réservés.</p>
+      <div class="flex space-x-4">
+        <a href="https://www.facebook.com/share/17d6MAAAk8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-slate-400 transition duration-300"><i class="fab fa-facebook-f text-xs"></i></a>
+        <a href="https://www.instagram.com/innov_eclat/" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-slate-400 transition duration-300"><i class="fab fa-instagram text-xs"></i></a>
+        <a href="https://www.linkedin.com/in/innov-%C3%A9clat-29b2a13a5/" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-slate-400 transition duration-300"><i class="fab fa-linkedin-in text-xs"></i></a>
+        <a href="https://www.tiktok.com/@innoveclat2?_r=1&_t=ZM-932BBC7ekAa" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-white/5 hover:bg-secondary-400 hover:text-slate-950 rounded-full flex items-center justify-center text-slate-400 transition duration-300"><i class="fab fa-tiktok text-xs"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
