@@ -46,6 +46,11 @@ html {
   transition: background-color 0.3s ease;
 }
 
+/* Bloquer le défilement horizontal sur mobile (iOS Safari ignore overflow-x sur html seul) */
+body {
+  overflow-x: hidden;
+}
+
 html.dark {
   background-image: radial-gradient(
     circle,
